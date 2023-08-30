@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Movie Data Entry</title>
+</head>
+<body>
+	<h1>Add New Movie Details</h1>
+	<form action="SaveServlet" method="post">
+		<table>
+			<tr>
+				<td>MOVIE ID</td>
+				<td><input type="number" name="movieid"></td>
+			</tr>
+			<tr>
+				<td>MOVIE NAME</td>
+				<td><input type="text" name="moviename"></td>
+			</tr>
+			<tr>
+				<td>ACTORS LIST</td>
+				<td><input type="text" name="actors"></td>
+			</tr>
+			<tr>
+				<td>ACTRESSES LIST</td>
+				<td><input type="text" name="actresses"></td>
+			</tr>
+			<tr>
+				<td>DIRECTOR</td>
+				<td><input type="text" name="director"></td>
+			</tr>
+			<tr>
+				<td>RATING OUT OF 5</td>
+				<td><select name="rating">
+						<option>1</option>
+						<option>1.5</option>
+						<option>2</option>
+						<option>2.5</option>
+						<option>3</option>
+						<option>3.5</option>
+						<option>4</option>
+						<option>4.5</option>
+						<option>5</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="ADD MOVIE"></td>
+			</tr>
+		</table>
+	</form>
+
+	<a href="/MovieServletCRUDApp/ViewServlet">View Movie List</a>
+	
+</body>
+</html>
